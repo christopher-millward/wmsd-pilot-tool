@@ -1,0 +1,34 @@
+@import '../../styles/globals.scss';
+
+.tlx-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tlx-container{
+    width: 100%;
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+
+.tlx-option{
+    -webkit-appearance: none;
+    appearance: none;
+    height: 2px; 
+    background-color: $grey1;
+    align-self: center;
+}
+
+.tlx-option::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 5px; 
+    height: 20px; 
+    border-radius: 15px;
+    background: $floralwhite;
+}
+

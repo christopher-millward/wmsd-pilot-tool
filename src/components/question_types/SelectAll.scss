@@ -1,0 +1,10 @@
+@import '../../styles/globals.scss';
+
+.box-and-option{
+    display:flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+// Styling for checkbox is in App.scss

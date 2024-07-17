@@ -1,0 +1,39 @@
+@import '../../styles/globals.scss';
+
+.region-name{
+    width:25vw; /*make it a grid*/
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.slider-container label {
+    margin-right: 10px;
+}
+
+.pain-slider{
+    margin-left: 5px;
+    margin-right:5px;
+    width: 50vw; /* Adjust width as needed */
+
+    -webkit-appearance: none;
+    appearance: none;
+    height: 2px; 
+    background-color: $grey1;
+}
+
+.pain-slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 5px; 
+    height: 20px; 
+    border-radius: 15px;
+    background: rgb(220,220,220);
+}
+
+.slider-value{
+    color: darken($color: $bone, $amount: 10) ;
+}

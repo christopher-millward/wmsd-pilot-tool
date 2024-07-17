@@ -1,0 +1,17 @@
+@import '../../styles/globals.scss';
+
+.MC-options{
+    margin-left:5px;
+}
+.MC-option{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+//radio styling is in App.scss
+
+.MC-label{
+    margin-left:5px;
+}
+

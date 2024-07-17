@@ -1,0 +1,330 @@
+{
+    "Q1":{
+        "category":"Demographic info",
+        "type":"Y/N",
+        "question":"Do you work in London, Ontario?",
+        "options":"",
+        "info":"",
+        "comment":""
+    },
+    "Q2":{
+        "category":"Demographic info",
+        "type":"numeric input",
+        "question":"What is your age (in years)?",
+        "options":"",
+        "info":"",
+        "comment":""
+    },
+    "Q3":{
+        "category":"Demographic info",
+        "type":"numeric input",
+        "question":"What is your height (in cm)?",
+        "options":"",
+        "info":"",
+        "comment":""
+    },
+    "Q4":{
+        "category":"Demographic info",
+        "type":"numeric input",
+        "question":"How much do you weigh (in kg)?",
+        "options":"",
+        "info":"Again, this is completely anonymous",
+        "comment":""
+    },
+    "Q5":{
+        "category":"Demographic info",
+        "type":"MC",
+        "question":"What gender do you identify with?",
+        "options":"Female, Male, Transgender Female, Transgender Male, Non-binary, Other",
+        "info":"Sorry if you fell into the 'other' category (I had limited options). I promise it's still important to me!",
+        "comment":""
+    },
+    "Q6":{
+        "category":"Demographic info",
+        "type":"numeric input",
+        "question":"For how many years have you been bartending?",
+        "options":"",
+        "info":"",
+        "comment":""
+    },
+    "Q7":{
+        "category":"Demographic info",
+        "type":"Y/N",
+        "question":"Is bartending your main source of income?",
+        "options":"",
+        "info":"",
+        "comment": "This allows me to draw correlation between barriers. Not asking if it's their main carreer because I'm asking them later on how many hours they spend at work"
+    },
+    "Q8":{
+        "category":"Workplace specifics",
+        "type":"MC",
+        "question":"What style of venue best describes your workplace?",
+        "options":"Night club, Pub, Dive Bar, Restaurant, Cocktail Lounge, Events Hall",
+        "info":"",
+        "comment":""
+    },
+    "Q9":{
+        "category":"Workplace specifics",
+        "type":"numeric input",
+        "question":"How many drinks do you make on a typical busy night?",
+        "options":"",
+        "info":"Typical Friday or Saturday night",
+        "comment":""
+    },
+    "Q10":{
+        "category":"Workplace specifics",
+        "type":"numeric input",
+        "question":"Of the drinks you make, what percentage are poured from draught?",
+        "options":"",
+        "info":"",
+        "comment":"validate range from 0 to 100"
+    },
+    "Q11":{
+        "category":"Workplace specifics",
+        "type":"numeric input",
+        "question":"Of the drinks you make, what percentage are served in a bottle/ can?",
+        "options":"",
+        "info":"",
+        "comment":"validate range from 0 to 100"
+    },
+    "Q12":{
+        "category":"Workplace specifics",
+        "type":"numeric input",
+        "question":"Of the drinks you make, what percentage require shaking in a tin?",
+        "options":"",
+        "info":"",
+        "comment":"validate range from 0 to 100"
+    },
+    "Q13":{
+        "category":"Workplace specifics",
+        "type":"Y/N",
+        "question":"Do you use a soda gun?",
+        "options":"",
+        "info":"",
+        "comment":""
+    },
+    "Q14":{
+        "category":"Workplace specifics",
+        "type":"numeric input",
+        "question":"Of your time spent at work, what percentage is spent pouring from a liquor bottle?",
+        "options":"",
+        "info":"",
+        "comment":"validate range from 0 to 100"
+    },
+    "Q15":{
+        "category":"Workplace specifics",
+        "type":"numeric input",
+        "question":"How long would your longest shift in a week be (in hours)?",
+        "options":"",
+        "info":"",
+        "comment":""
+    },
+    "Q16":{
+        "category":"Workplace specifics",
+        "type":"numeric input",
+        "question":"How long is your typical shift (in hours)?",
+        "options":"",
+        "info":"",
+        "comment":""
+    },
+    "Q17":{
+        "category":"Workplace specifics",
+        "type":"numeric input",
+        "question":"How many hours do you work each week?",
+        "options":"",
+        "info":"",
+        "comment":""
+    },
+    "Q18":{
+        "category":"Workplace specifics",
+        "type":"MC",
+        "question":"In a typical month, how often do you work doubles/ throughs?",
+        "options":"less than one, 1, 2, 4, more than 4",
+        "info":"",
+        "comment":""
+    },
+    "Q19":{
+        "category":"Workplace specifics",
+        "type":"MC",
+        "question":"In a typical month, how often do you cl-open?",
+        "options":"less than one, 1, 2, 4, more than 4",
+        "info":"cl-open = close and then come back in to open",
+        "comment":""
+    },
+    "Q20":{
+        "category":"Self-reported demands",
+        "type":"regional pain",
+        "question":"During/ immediately following a typical shift, rate your pain/ discomfort in each area on a linear scale",
+        "options":"",
+        "info":"",
+        "comment":"Sliding scale + region photo. Have labels on scale"
+    },
+    "Q21":{
+        "category":"Self-reported demands",
+        "type":"regional pain",
+        "question":"On your typical day not at work, rate your pain/ discomfort in each area on a linear scale",
+        "options":"",
+        "info":"",
+        "comment":"sliding scale + region photo. Have labels on scale"
+    },
+    "Q22":{
+        "category":"Self-reported demands",
+        "type":"open response",
+        "question":"If any, what parts of the job cause you pain or discomfort?",
+        "options":"",
+        "info":"leave blank if nothing",
+        "comment":""
+    },
+    "Q23":{
+        "category":"Self-reported demands",
+        "type":"open response",
+        "question":"If any, what parts of the job cause physical exhaustion?",
+        "options":"",
+        "info":"",
+        "comment":""
+    },
+    "Q24":{
+        "category":"Self-reported demands",
+        "type":"Y/N",
+        "question":"Do you believe you will be forced to stop bartending one day due to body pain/ injury?",
+        "options":"",
+        "info":"",
+        "comment":""
+    },
+    "Q25":{
+        "category":"Self-reported demands",
+        "type":"MC",
+        "question":"How often does work negatively impact your sleep schedule?",
+        "options":"Never, Rarely, Often, Very Often, Always",
+        "info":"",
+        "comment":""
+    },
+    "Q26":{
+        "category":"Self-reported demands",
+        "type":"TLX",
+        "question":"How mentally demanding is a typical shift?",
+        "options":"",
+        "info":"",
+        "comment":"format the TLX so it's well commented and easy to understand"
+    },
+    "Q27":{
+        "category":"Self-reported demands",
+        "type":"TLX",
+        "question":"How physically demanding is a typical shift?",
+        "options":"",
+        "info":"",
+        "comment":"format the TLX so it's well commented and easy to understand"
+    },
+    "Q28":{
+        "category":"Self-reported demands",
+        "type":"TLX",
+        "question":"How time-sensitive are your tasks during a typical shift?",
+        "options":"",
+        "info":"How much pressure do you feel due to the timing of everything?",
+        "comment":"format the TLX so it's well commented and easy to understand"
+    },
+    "Q29":{
+        "category":"Self-reported demands",
+        "type":"TLX",
+        "question":"How successful are you at performing your job duties?",
+        "options":"",
+        "info":"",
+        "comment":"format the TLX so it's well commented and easy to understand"
+    },
+    "Q30":{
+        "category":"Self-reported demands",
+        "type":"TLX",
+        "question":"How much effort is needed to perform your job duties?",
+        "options":"",
+        "info":"",
+        "comment":"format the TLX so it's well commented and easy to understand"
+    },
+    "Q31":{
+        "category":"Self-reported demands",
+        "type":"TLX",
+        "question":"How much frustration do you feel during a typical shift?",
+        "options":"",
+        "info":"",
+        "comment":"format the TLX so it's well commented and easy to understand"
+    },
+    "Q32":{
+        "category":"Physical agents",
+        "type":"MC",
+        "question":"During a typical shift, how often do your hands hurt due to cold exposure?",
+        "options":"Never, Rarely, Often, Very Often, Always",
+        "info":"",
+        "comment":"leads into dangers of shaking with a poor insulating material"
+    },
+    "Q33":{
+        "category":"Physical agents",
+        "type":"MC",
+        "question":"How noisy is your workplace during a typical shift? (relate it to a setting)",
+        "options":"Normal speaking volume, busy street, vacuum cleaner, police siren, rock concert",
+        "info":"",
+        "comment":""
+    },
+    "Q34":{
+        "category":"Physical agents",
+        "type":"MC",
+        "question":"How often do you lift heavy things at work (changing kegs, carrying cases of liquor, etc.)",
+        "options":"Never, Rarely, Often, Very Often, Always",
+        "info":"",
+        "comment":""
+    },
+    "Q35":{
+        "category":"Physical agents",
+        "type":"MC",
+        "question":"How often do you experience eye strain at work?",
+        "options":"Never, Rarely, Often, Very Often, Always",
+        "info":"",
+        "comment":""
+    },
+    "Q36":{
+        "category":"Physical agents",
+        "type":"MC",
+        "question":"How often do you stand/ walk on slippery floors at work?",
+        "options":"Never, Rarely, Often, Very Often, Always",
+        "info":"",
+        "comment":""
+    },
+    "Q37":{
+        "category":"Barriers to reporting",
+        "type":"Y/N",
+        "question":"Have you ever been injured working in a restaurant?",
+        "options":"",
+        "info":"",
+        "comment":""
+    },
+    "Q38":{
+        "category":"Barriers to reporting",
+        "type":"Y/N",
+        "question":"If yes, did you report this injury?",
+        "options":"",
+        "info":"",
+        "comment":"Conditional on Q37"
+    },
+    "Q39":{
+        "category":"Barriers to reporting",
+        "type":"Y/N",
+        "question":"Has an employer (restaurant) ever clearly explained the injury reporting process (i.e., what to report, when to report, how to report, what the process looks like)?",
+        "options":"",
+        "info":"",
+        "comment":"Maybe explain overuse injuries?"
+    },
+    "Q40":{
+        "category":"Barriers to reporting",
+        "type":"Y/N",
+        "question":"Do you believe there is a strong comittment to the occupational safety and health of bartenders within the industry?",
+        "options":"",
+        "info":"",
+        "comment":""
+    },
+    "Q41":{
+        "category":"Barriers to reporting",
+        "type":"select all",
+        "question":"Select all potential reasons that you personally may not report an injury to your employer or WSIB",
+        "options":"It may negatively impact your employment status (won't get the good shifts, will get scheduled less, will get fired, etc.), Coworkers will think less of you (labelled as 'a complainer', 'careless', 'not hard working', etc.), You don't trust management to keep the issue confidential, Management will be more strict on safety rules afterwards, No benefit will come from reporting (not worth your time), You cannot afford to take time away from work, You're too busy working to notify management, You don't know how the process works or even how to go about it, Uncertain if injury was related to work, The injury wasn't severe enough, Injuries of this nature are just part of the job, You've reported before and nothing happened, None of the above, Other",
+        "info":"",
+        "comment":"This is the big, beefy one"
+    }
+}

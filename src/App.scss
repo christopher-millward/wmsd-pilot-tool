@@ -1,0 +1,208 @@
+@import './styles/globals.scss';
+*{
+    margin:0px;
+
+    font-size: $body-font-size;
+    font-family:'Roboto';
+    color:$bone-pale;
+    overflow-x: hidden;
+    
+//   outline: 1px solid #f00 !important;
+}
+// html {
+//     scrollbar-face-color: #646464;
+//     scrollbar-base-color: #646464;
+//     scrollbar-3dlight-color: #646464;
+//     scrollbar-highlight-color: #646464;
+//     scrollbar-track-color: #000;
+//     scrollbar-shadow-color: #646464;
+//   }
+  
+  ::-webkit-scrollbar { width: 8px;}
+  ::-webkit-scrollbar-track {  background-color: transparent; border-radius: 10px; height:10%;}
+  ::-webkit-scrollbar-track-piece { background-color: transparent; border-radius: 20px;}
+  ::-webkit-scrollbar-thumb { height: 50px; background-color: #66666657; border-radius:10px;}
+  ::-webkit-scrollbar-corner { background-color: transparent;}
+  ::-webkit-resizer { background-color: transparent;}
+  ::-webkit-scrollbar-button{display: none;}
+
+#root{
+    background-image: 
+        radial-gradient(rgba(171, 134, 32, 0.1) 5%, transparent 5%), //polka dots
+        radial-gradient(rgba(171, 134, 32, 0.1) 5%, transparent 5%), //polka dots
+        linear-gradient(90deg, rgba(77,43,28,1) 9%, rgba(46,30,15,1) 87%); //linear gradient
+    background-position: 0px 0px, 20px 20px; //positions polka dots
+    background-size: 40px 40px, //polka dots
+                    40px 40px, //polka dots
+                    100% 100%; //linear gradient
+    
+    background-attachment: fixed;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.App{
+    width:100%;
+    max-width: 450px;
+    min-height:100vh;
+    // ADD MEDIA QUERY TO MAKE CONTAINER ALWAYS OPTIMAL FOR MOBILE PHONE.
+    position: relative;
+    // overflow-x:hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#decal{
+    position:fixed;
+    top:5vh;
+    left:60%;
+    height:90vh;
+    filter: invert(100%) opacity(7%);
+}
+
+.question-question{
+    color: $bone;
+    font-size: $body-font-size*1.2;
+    font-family: 'Roboto Light';
+    letter-spacing: 1px;
+
+    padding:2px;
+
+    border-bottom: solid 0.5px $grey2;
+    margin-bottom:5px;
+}
+
+.question-card{
+    width:85%;
+    min-height:100px;
+    
+    padding:5px;
+    margin:20px 0px 20px 0px;
+
+    background-color: $bistre;
+
+    background: rgba(72, 47, 24, 0.1);
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 2px rgba(0,0,0, 0.5);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border: 1px solid rgba(72, 47, 24, 0.3);
+
+    overflow:scroll;
+}
+
+input{
+    background-color: ivory;
+    color:$black1;
+    border-radius: 2px;
+    border:none;
+}
+
+/***** RADIO STYLING *****/
+input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+    /* For iOS < 15 to remove gradient background */
+    background-color: $black2;
+
+    font: inherit;
+    color: $grey2;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.125em solid currentColor;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+}
+
+input[type="radio"]::before {
+    content: "";
+    width: 0.75em;
+    height: 0.75em;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em $bone; /* Adjusted box shadow */
+}
+
+input[type="radio"]:checked::before {
+    transform: scale(1);
+}
+
+.invalid{
+    border:solid red 1.5px;
+    border-radius: 10px;
+}
+
+
+/***** CHECKBOX STYLING *****/
+input[type="checkbox"]{
+    -webkit-appearance: none;
+    appearance: none;
+    display: grid;
+    place-content: center;
+    margin: 0px 10px 5px 5px;
+    border: 2px solid $grey2;
+    box-shadow: inset 1em 1em $black2;
+}
+
+input[type="checkbox"]::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em $black2;
+    border-radius:inherit;
+}
+
+input[type="checkbox"]:checked::before {
+    content: "✓";
+    font: 'Roboto Black';
+
+    transform: scale(1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:$bone;
+    box-shadow: inset 1em 1em $grey1;
+}
+
+button{
+    padding: 5px 10px;
+
+    background-color: $black2;
+    border-radius: 10px;
+    border: solid 0.2px $grey1;
+    box-shadow: 2px 2px 5px 1px rgba(0,0,0, 0.5);
+
+    color:$bone;
+    cursor: pointer;
+}
+
+button:active{
+    background-color: $blue1;
+    color:white;
+}
+
+#contact-info{
+    position:absolute;
+    bottom:0px;
+    padding:3px 0px;
+    font-size: 13px;
+    color: rgba(211, 205, 181, 0.7);
+}
+.mailto{
+    font-size: 13px;
+    color: rgba(211, 205, 181, 0.7);
+}
+.exit-modal{
+    width:30px;
+    height:30px;
+    border-radius: 5px;
+    align-self: flex-end;
+    margin-right:10px;
+}

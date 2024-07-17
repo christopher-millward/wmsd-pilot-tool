@@ -1,0 +1,14 @@
+@import '../../styles/globals.scss';
+
+.sa-open-response{
+    width:100%;
+    margin-left:10px;
+    margin-top:0px;
+    height: 1em;
+    padding:2.5px;
+    color:$black1;
+}::placeholder{
+        color: darken($color: $grey2, $amount: 10) ;
+};
+
+

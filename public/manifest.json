@@ -1,0 +1,8 @@
+{
+  "short_name": "Bar Survey",
+  "name": "Injury reporitng amongst bartenders in London, Ontario ",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

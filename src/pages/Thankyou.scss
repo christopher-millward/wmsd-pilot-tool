@@ -1,0 +1,38 @@
+@import '../styles/globals.scss';
+
+#thankyou-page{
+    height:100vh;
+    width:100%;
+
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(5px);
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+#thankyou-title{
+    font-size: 35px;
+    margin:10px 0px;
+}
+
+#thankyou-container{
+    
+    font-size:$body-font-size;
+    align-content: center;
+    text-align:left;
+
+    padding:5px 10px 10px 10px;
+    margin:10px 10px 20px 10px;
+
+    
+    background: rgba(160, 111, 65, 0.1);
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 2px rgba(0,0,0, 0.5);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(72, 47, 24, 0.3);
+
+    max-height:60%;
+}
+
