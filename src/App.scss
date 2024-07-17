@@ -5,7 +5,6 @@
     font-size: $body-font-size;
     font-family:'Roboto';
     color:$bone-pale;
-    overflow-x: hidden;
     
 //   outline: 1px solid #f00 !important;
 }
@@ -18,13 +17,13 @@
 //     scrollbar-shadow-color: #646464;
 //   }
   
-  ::-webkit-scrollbar { width: 8px;}
-  ::-webkit-scrollbar-track {  background-color: transparent; border-radius: 10px; height:10%;}
-  ::-webkit-scrollbar-track-piece { background-color: transparent; border-radius: 20px;}
-  ::-webkit-scrollbar-thumb { height: 50px; background-color: #66666657; border-radius:10px;}
-  ::-webkit-scrollbar-corner { background-color: transparent;}
-  ::-webkit-resizer { background-color: transparent;}
-  ::-webkit-scrollbar-button{display: none;}
+//   ::-webkit-scrollbar { width: 8px;}
+//   ::-webkit-scrollbar-track {  background-color: transparent; border-radius: 10px; height:10%;}
+//   ::-webkit-scrollbar-track-piece { background-color: transparent; border-radius: 20px;}
+//   ::-webkit-scrollbar-thumb { height: 50px; background-color: #66666657; border-radius:10px;}
+//   ::-webkit-scrollbar-corner { background-color: transparent;}
+//   ::-webkit-resizer { background-color: transparent;}
+//   ::-webkit-scrollbar-button{display: none;}
 
 #root{
     background-image: 
@@ -48,7 +47,7 @@
     min-height:100vh;
     // ADD MEDIA QUERY TO MAKE CONTAINER ALWAYS OPTIMAL FOR MOBILE PHONE.
     position: relative;
-    // overflow-x:hidden;
+    overflow-x:hidden;
 }
 
 html {
@@ -198,11 +197,4 @@ button:active{
 .mailto{
     font-size: 13px;
     color: rgba(211, 205, 181, 0.7);
-}
-.exit-modal{
-    width:30px;
-    height:30px;
-    border-radius: 5px;
-    align-self: flex-end;
-    margin-right:10px;
 }

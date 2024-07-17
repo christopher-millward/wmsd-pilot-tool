@@ -1,7 +1,7 @@
 @import '../../styles/globals.scss';
 
 .region-name{
-    width:25vw; /*make it a grid*/
+    width:30%; /*make it a grid*/
 }
 
 .slider-container {
@@ -17,9 +17,8 @@
 .pain-slider{
     margin-left: 5px;
     margin-right:5px;
-    width: 50vw; /* Adjust width as needed */
+    width: 50%; /* Adjust width as needed */
 
-    -webkit-appearance: none;
     appearance: none;
     height: 2px; 
     background-color: $grey1;
