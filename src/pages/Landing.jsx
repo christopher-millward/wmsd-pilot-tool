@@ -23,8 +23,8 @@ export default function Landing() {
         <b>You are:</b>
         <ul>
             <li>A bartender in London, Ontario</li>
-            <li>Able to read English</li>
-            <li>Willing to fill out a 10-minute survey</li>
+            <li>Able to read and understand English</li>
+            <li>Willing to fill out a <u>10-minute</u> survey</li>
         </ul>
         <br></br>
         <b>You receive:</b>

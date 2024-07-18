@@ -5,6 +5,7 @@ import RegionalPain from '../components/question_types/RegionalPain';
 import OpenResponse from '../components/question_types/OpenResponse';
 import TLX from '../components/question_types/TLX';
 import SelectAll from '../components/question_types/SelectAll';
+import ImperialHeight from '../components/question_types/ImperialHeight';
 
 
 const questionTypeToComponent = {
@@ -15,6 +16,7 @@ const questionTypeToComponent = {
   'open response': OpenResponse,
   'TLX': TLX,
   'select all': SelectAll,
+  'imperial height': ImperialHeight
 };
 
 function renderQuestionComponent(question) {

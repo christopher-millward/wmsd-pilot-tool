@@ -41,7 +41,7 @@ const context = useContext(ResponseContext);
             type="text"
             name={question.id}
             id={question.id+'open-response'}
-            placeholder='Please share!'
+            placeholder='You may leave this blank.'
             autoComplete='off'
             onChange={()=>orHandler()}
             />

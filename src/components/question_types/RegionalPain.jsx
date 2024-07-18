@@ -2,12 +2,14 @@ import React, {useContext, useEffect, useState} from 'react';
 import handleResponses from '../../utils/hooks/handleResponses';
 import { ResponseContext } from '../../App';
 import './RegionalPain.scss';
+import usePreventTouch from '../../utils/hooks/usePreventTouch';
 
 export default function RegionalPain(question) {
   const context = useContext(ResponseContext);
+  usePreventTouch();
 
   // Set default values
-  const default_value=2;
+  const default_value=0;
   const regions=['Neck', 'Upper Back', 'Lower Back', 'Shoulders', 'Elbows', 'Wrists', 'Hands', 'Hips', 'Knees', 'Feet & Ankles']
 
   useEffect(() => {
@@ -38,7 +40,7 @@ export default function RegionalPain(question) {
             <label htmlFor={region} className='region-name'>{region}</label>
             <input
               type="range"
-              min="1" 
+              min="0" 
               max="10"
               step="1"
               defaultValue={default_value}

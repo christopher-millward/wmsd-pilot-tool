@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-transform: capitalize;
 }
 
 .tlx-container{
@@ -21,6 +22,8 @@
     height: 2px; 
     background-color: $grey1;
     align-self: center;
+    position: relative;
+    z-index:2;
 }
 
 .tlx-option::-webkit-slider-thumb {
@@ -30,5 +33,30 @@
     height: 20px; 
     border-radius: 15px;
     background: $floralwhite;
+}
+
+.ticks{
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+}
+
+.tick{
+    font-weight: 900;
+    color:rgba($grey1, 1);
+    position:relative;
+    top:-12px;
+    align-self: center;
+}
+.major-tick{
+    font-size:0.75em;
+}
+.minor-tick{
+    font-size: 0.5em;
+}
+
+.tlx-specification{
+    font-size:0.8rem;
+    margin-bottom:10px;
 }
 

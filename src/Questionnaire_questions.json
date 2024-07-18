@@ -17,8 +17,8 @@
     },
     "Q3":{
         "category":"Demographic info",
-        "type":"numeric input",
-        "question":"What is your height (in cm)?",
+        "type":"imperial height",
+        "question":"What is your height?",
         "options":"",
         "info":"",
         "comment":""
@@ -26,7 +26,7 @@
     "Q4":{
         "category":"Demographic info",
         "type":"numeric input",
-        "question":"How much do you weigh (in kg)?",
+        "question":"How much do you weigh (in lbs)?",
         "options":"",
         "info":"Again, this is completely anonymous",
         "comment":""
@@ -66,7 +66,7 @@
     "Q9":{
         "category":"Workplace specifics",
         "type":"numeric input",
-        "question":"How many drinks do you make on a typical busy night?",
+        "question":"How many drinks do you prepare on a typical busy night?",
         "options":"",
         "info":"Typical Friday or Saturday night",
         "comment":""
@@ -74,7 +74,7 @@
     "Q10":{
         "category":"Workplace specifics",
         "type":"numeric input",
-        "question":"Of the drinks you make, what percentage are poured from draught?",
+        "question":"Of the drinks you prepare, what percentage are poured from draught?",
         "options":"",
         "info":"",
         "comment":"validate range from 0 to 100"
@@ -82,7 +82,7 @@
     "Q11":{
         "category":"Workplace specifics",
         "type":"numeric input",
-        "question":"Of the drinks you make, what percentage are served in a bottle/ can?",
+        "question":"Of the drinks you prepare, what percentage are served in a bottle/ can?",
         "options":"",
         "info":"",
         "comment":"validate range from 0 to 100"
@@ -90,7 +90,7 @@
     "Q12":{
         "category":"Workplace specifics",
         "type":"numeric input",
-        "question":"Of the drinks you make, what percentage require shaking in a tin?",
+        "question":"Of the drinks you prepare, what percentage require shaking in a tin?",
         "options":"",
         "info":"",
         "comment":"validate range from 0 to 100"

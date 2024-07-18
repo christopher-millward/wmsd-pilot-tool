@@ -19,7 +19,7 @@ function orHandler(){
           type="text"
           name={question.id} 
           id={question.id+'-'+option+'mc-open-response'}
-          placeholder='please share!'
+          placeholder='You may leave this blank'
           autoComplete='off'
           onChange={()=>orHandler()}
         />

@@ -21,7 +21,7 @@ function validateAllResponses(responses){
 
     // Identify the empty questions
     Q_IDs.forEach((id)=>{    
-        if(!Object.keys(responses).includes(id) || responses[id]=='' || Number.isNaN(responses[id])){ // if blank
+        if(!Object.keys(responses).includes(id) || responses[id]==='' || Number.isNaN(responses[id])){ // if blank
             invalid[id]='Question has not been answered'; // add to Obj
         }
     
