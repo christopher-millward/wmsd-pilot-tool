@@ -24,6 +24,7 @@
     align-self: center;
     position: relative;
     z-index:2;
+    pointer-events: none;
 }
 
 .tlx-option::-webkit-slider-thumb {
@@ -33,6 +34,8 @@
     height: 20px; 
     border-radius: 15px;
     background: $floralwhite;
+    pointer-events: auto;
+    box-shadow: 0 0 0px 25px rgba(0, 0, 0, .001);
 }
 
 .ticks{

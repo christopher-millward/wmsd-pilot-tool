@@ -36,8 +36,7 @@ export default function EmailQuestions() {
         <h2 id='email-intake-title'>Email Intake</h2>
         <p><b>Your email address is NOT AT ALL linked to your questionnaire response.</b>
             If you choose to share your email address for either of the following purposes, 
-            your email address will be sent to a <b>seperate</b> database that has no ability 
-            to be linked to your questionnaire response. 
+            your email address will be sent to a <b>seperate</b> database that is <b>NOT</b> linked to your questionnaire response. 
         </p>
 
         
@@ -45,36 +44,28 @@ export default function EmailQuestions() {
             {Object.keys(questions).map((question)=>{
                 questions[question].id=question;
                 return (
-                     <div>{renderQuestionComponent(questions[question])}</div>
+                     <div>
+                        {renderQuestionComponent(questions[question])}
+                        <br></br>
+                     </div>
+                     
                 )
             })}
 
         
             <div className={`open-response-question question-section`}>
-                <h2 className="question-question">Please enter your email</h2>
+                <h2 className="question-question">Please enter your email address.</h2>
                 <div>
-                    <textarea
+                    <input
                     className='email-4'
-                    type="text"
-                    name='test'
-                    id={'test'}
-                    placeholder='Please share!'
-                    autoComplete='off'
+                    type='email'
+                    name='email-input'
+                    id={'email-input'}
+                    placeholder=' Leave blank if all were "No".'
                     />
                 </div>
             </div>
         </div>
-
-        
-        {/* {Object.keys(questions).map((question)=>{
-            return (
-                <div className='question-card' key={question}> 
-                   { renderQuestionComponent(questions[question]) }
-                </div>
-            )
-        })} */}
-
-      
     </div>
   )
 }

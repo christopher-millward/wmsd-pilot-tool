@@ -2,11 +2,9 @@ import React, {useContext, useEffect, useState} from 'react';
 import handleResponses from '../../utils/hooks/handleResponses';
 import { ResponseContext } from '../../App';
 import './RegionalPain.scss';
-import usePreventTouch from '../../utils/hooks/usePreventTouch';
 
 export default function RegionalPain(question) {
   const context = useContext(ResponseContext);
-  usePreventTouch();
 
   // Set default values
   const default_value=0;

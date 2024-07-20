@@ -77,7 +77,7 @@
         "question":"Of the drinks you prepare, what percentage are poured from draught?",
         "options":"",
         "info":"",
-        "comment":"validate range from 0 to 100"
+        "comment":"*Just guess. Does not have to sum to 100."
     },
     "Q11":{
         "category":"Workplace specifics",
@@ -85,7 +85,7 @@
         "question":"Of the drinks you prepare, what percentage are served in a bottle/ can?",
         "options":"",
         "info":"",
-        "comment":"validate range from 0 to 100"
+        "comment":"*Just guess. Does not have to sum to 100."
     },
     "Q12":{
         "category":"Workplace specifics",
@@ -93,7 +93,7 @@
         "question":"Of the drinks you prepare, what percentage require shaking in a tin?",
         "options":"",
         "info":"",
-        "comment":"validate range from 0 to 100"
+        "comment":"*Just guess. Does not have to sum to 100."
     },
     "Q13":{
         "category":"Workplace specifics",
@@ -109,7 +109,7 @@
         "question":"Of your time spent at work, what percentage is spent pouring from a liquor bottle?",
         "options":"",
         "info":"",
-        "comment":"validate range from 0 to 100"
+        "comment":""
     },
     "Q15":{
         "category":"Workplace specifics",

@@ -15,13 +15,14 @@
 }
 
 .pain-slider{
-    margin-left: 5px;
-    margin-right:5px;
+    margin: 15px 5px 15px 5px;
     width: 50%; /* Adjust width as needed */
 
     appearance: none;
     height: 2px; 
     background-color: $grey1;
+
+    pointer-events: none;
 }
 
 .pain-slider::-webkit-slider-thumb {
@@ -31,7 +32,8 @@
     height: 20px; 
     border-radius: 15px;
     background: rgb(220,220,220);
-    box-shadow: 0 0 0px 10px rgba(0, 0, 0, 0.001);
+    box-shadow: 0 0 0px 15px rgba(0, 0, 0, 0.001);
+    pointer-events: auto;
 }
 
 .slider-value{

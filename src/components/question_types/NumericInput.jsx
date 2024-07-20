@@ -21,9 +21,12 @@ function NumericInput(question) {
   return (
     <div className={`numeric-input question-section ${question.id+'-container'}`}>
       <h2 className="question-question">{question.question}</h2>
+      <p class='numeric-input-specification'>{question.comment}</p>
       <div className='input-container'>
-        <input
+        <input 
           type="number"
+          inputMode='numeric'
+          pattern='[0-9]*'
           value={inputValue}
           onChange={(e)=>numInputHandler(e)}
           placeholder='number'
