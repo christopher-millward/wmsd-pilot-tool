@@ -39,9 +39,7 @@ function App() {
   const [allResponses, setAllResponses] = useState({});
 
   console.log("Need to fix a couple things here: ")
-  console.log("- Validate Email logic (yes vs no vs leaving email empty)")
-  console.log("- build server")
-  console.log("- route API calls in client")
+  console.log("- make sure data format is consistent in server")
   console.log("- style for Safari ios")
 
   return (

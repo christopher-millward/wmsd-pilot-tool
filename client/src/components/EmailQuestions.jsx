@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import renderQuestionComponent from '../utils/question_mapper';
 import './EmailQuestions.scss';
+import handleResponses from '../utils/hooks/handleResponses';
+import { ResponseContext } from '../App';
 
 export default function EmailQuestions() {
+    const context = useContext(ResponseContext);
 
     const questions = {
         "email-1":{
@@ -31,6 +34,14 @@ export default function EmailQuestions() {
         }
     }
 
+    function emailInputHandler(){
+        const emailElement = document.getElementById('email-input');
+        // Remove invalid tag if present
+        emailElement.parentElement.classList.remove('invalid')
+        handleResponses(context, 'email-input', emailElement.value);
+    }
+
+
   return (
     <div id='email-intake-container'>
         <h2 id='email-intake-title'>Email Intake</h2>
@@ -55,13 +66,14 @@ export default function EmailQuestions() {
         
             <div className={`open-response-question question-section`}>
                 <h2 className="question-question">Please enter your email address.</h2>
-                <div>
+                <div className='email-input-container'>
                     <input
                     className='email-4'
                     type='email'
                     name='email-input'
-                    id={'email-input'}
+                    id='email-input'
                     placeholder=' Leave blank if all were "No".'
+                    onChange={()=>emailInputHandler()}
                     />
                 </div>
             </div>

@@ -1,4 +1,4 @@
-import React, {useContext, useEffect, useState} from 'react';
+import React, {useContext, useEffect} from 'react';
 import handleResponses from '../../utils/hooks/handleResponses';
 import { ResponseContext } from '../../App';
 import './RegionalPain.scss';
@@ -10,6 +10,8 @@ export default function RegionalPain(question) {
   const default_value=0;
   const regions=['Neck', 'Upper Back', 'Lower Back', 'Shoulders', 'Elbows', 'Wrists', 'Hands', 'Hips', 'Knees', 'Feet & Ankles']
 
+  // Need to add the initial values to storage just incase someone leaves 
+  // it as-is to submit a value of 0.
   useEffect(() => {
     regions.forEach(region=>{ // for each region of the body
       handleResponses(context, question.id+'-'+region, default_value) // add the initial value to memory

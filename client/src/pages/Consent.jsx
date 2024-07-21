@@ -2,21 +2,30 @@ import React, { useContext } from 'react'
 import './Consent.scss';
 import consentHTML from '../assets/consent-doc';
 import { useNavigate } from 'react-router-dom';
-import { PermissionsContext } from '../App';
+import { ResponseContext } from '../App';
+import { routeData } from '../services/routing';
 
-export default function Consent(pops) {
-  const permissionSetters = useContext(PermissionsContext);
+export default function Consent() {
+  const responseContext = useContext(ResponseContext)
   const navigate = useNavigate();
 
   const are_responses_validated = () => localStorage.getItem('all-responses') == 'true';
 
   function handleConsent(){
-    // set state to true
-    // permissionSetters.setConsentObtained(true);
     // save state to local
     localStorage.setItem("consent-obtained",true);
     // Navigate where needed
-    navigate(are_responses_validated() ? '/thankyou' : '/questionnaire');
+    if(are_responses_validated()){
+      // send data to server
+      routeData(responseContext.allResponses)
+      // clear everything
+      responseContext.setAllResponses({})
+      localStorage.clear()
+      // go to thank you
+      navigate('/thankyou')
+    }else{
+      navigate('/questionnaire')
+    }
   }
 
   return (

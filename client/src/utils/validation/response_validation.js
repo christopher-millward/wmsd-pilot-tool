@@ -26,9 +26,14 @@ function validateAllResponses(responses){
         }
     
     // If any of the email questions were "Yes"
-    // if(emailIDs.some(id => document.querySelector(`#${id} input[type="radio"]:checked`).value === "Yes")){
-    //     console.log("one is a yes")
-    // } 
+    if(emailIDs.some(id => document.querySelector(`#${id} input[type="radio"]:checked`).value === "Yes")){
+        // if email is blank
+        const emailElement = document.getElementById('email-input');
+        
+        if(emailElement.value ==='' || Number.isNaN(emailElement.value)){ //if email is blank
+            invalid['email-input']='email must be entered';
+        }
+    } 
     });
     return invalid;
 }

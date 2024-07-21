@@ -3,6 +3,7 @@ import './Submit.scss';
 import {validateAll} from '../utils/validation/app_validation';
 import { ResponseContext } from '../App';
 import { useNavigate } from 'react-router-dom';
+import {routeData} from '../services/routing';
 
 export default function Submit() {
     const responseContext = useContext(ResponseContext);
@@ -13,6 +14,9 @@ export default function Submit() {
         const all_good = validateAll(responseContext.allResponses);
 
         if(all_good.status){
+            // send data to server 
+            routeData(responseContext.allResponses);
+
             // wipe all states clean
             responseContext.setAllResponses({})
             localStorage.clear()

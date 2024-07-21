@@ -1,0 +1,47 @@
+# Node.js dependencies
+node_modules/
+
+# Environment variables
+.env
+credentials.json
+
+# Logs
+*.log
+logs/
+
+# Runtime files
+pids/
+*.pid
+*.seed
+
+# Directory for server runtime files
+server/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+
+# Tesing
+API_TEST.rest
+test-data.json
+
+# Compiled source #
+###################
+dist/
+build/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE-specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Optional: Ignore local environment configs
+local.env
+
+# Optional: Ignore test coverage reports
+coverage/

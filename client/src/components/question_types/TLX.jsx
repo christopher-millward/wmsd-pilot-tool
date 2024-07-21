@@ -43,12 +43,12 @@ export default function TLX(question) {
                 step="1"
                 onChange={()=>tlxHandler(question.id)}
               />
-              <div class="ticks">
-                <span class="tick major-tick">|</span>
-                <span class="tick minor-tick">|</span>
-                <span class="tick major-tick">|</span>
-                <span class="tick minor-tick">|</span>
-                <span class="tick major-tick">|</span>
+              <div className="ticks">
+                <span className="tick major-tick">|</span>
+                <span className="tick minor-tick">|</span>
+                <span className="tick major-tick">|</span>
+                <span className="tick minor-tick">|</span>
+                <span className="tick major-tick">|</span>
               </div>
             </div>
             <label>extremely</label>
