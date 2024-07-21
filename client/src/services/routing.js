@@ -35,9 +35,9 @@ async function postData(endpoint, data){
 function handleEmails(data) {
     // Define key: endpoint mappings
     const endpoints = {
-        'email-1': process.env.REACT_SEVER_SEND_GIFTCARD_URL,
-        'email-2': process.env.REACT_SEVER_SEND_RESULTS,
-        'email-3': process.env.REACT_SEVER_SEND_FUTURE_ENROLMENTS
+        'email-1': process.env.VITE_SEVER_SEND_GIFTCARD_URL,
+        'email-2': process.env.VITE_SEVER_SEND_RESULTS,
+        'email-3': process.env.VITE_SEVER_SEND_FUTURE_ENROLMENTS
     };
 
     // Route to the endpoints if needed
@@ -49,7 +49,7 @@ function handleEmails(data) {
 }
 
 function handleResponses(data){
-    const endpoint = process.env.REACT_SERVER_SUBMIT_RESPONSES;
+    const endpoint = process.env.VITE_SERVER_SUBMIT_RESPONSES;
     postData(endpoint, data)
 }
 
