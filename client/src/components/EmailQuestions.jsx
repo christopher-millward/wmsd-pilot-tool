@@ -45,7 +45,7 @@ export default function EmailQuestions() {
   return (
     <div id='email-intake-container'>
         <h2 id='email-intake-title'>Email Intake</h2>
-        <p><b>Your email address is NOT AT ALL linked to your questionnaire response.</b>
+        <p id='email-explanation'><b>Your email address is NOT AT ALL linked to your questionnaire response.</b>
             If you choose to share your email address for either of the following purposes, 
             your email address will be sent to a <b>seperate</b> database that is <b>NOT</b> linked to your questionnaire response. 
         </p>

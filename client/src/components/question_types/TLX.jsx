@@ -28,7 +28,7 @@ export default function TLX(question) {
   return (
     <div className={`tlx-question question-section ${question.id+'-container'}`}>
       <h2 className="question-question">{question.question}</h2>
-      <p className='tlx-specification'>*consider everything you do in a shift beyond just answering to the chit printer (speaking to customers, counting the till, etc.)</p>
+      <p className='question-specification'>*consider everything you do in a shift beyond just answering to the chit printer (speaking to customers, counting the till, etc.)</p>
       <div className="tlx-options" id={question.id}>
           <div key={question.index} className='tlx-container'>
             <label>not at all</label>
