@@ -25,8 +25,12 @@ export default function SelectAll(question) {
     const ORinput = values.includes('Other') && document.getElementById('Q41-Othersa-open-response');
     if (ORinput) values.push(`Other-${ORinput.value}`);
     
+    // format to a semicolon separated string.
+    // The Google Sheets API doens't accept arrays, so need to wrap it all into one string. 
+    const formatted_values = values.join('; ');
+
     // Send to memory
-    handleResponses(context, question.id, values)
+    handleResponses(context, question.id, formatted_values)
   }
 
     return (

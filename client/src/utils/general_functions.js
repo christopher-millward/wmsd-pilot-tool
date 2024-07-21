@@ -41,5 +41,4 @@ function getCheckedBoxes(container){
     return all_vals
 }
 
-
 export {splitOptions, sortByQuestionNumber, getCheckedBoxes};

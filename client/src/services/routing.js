@@ -35,22 +35,25 @@ async function postData(endpoint, data){
 function handleEmails(data) {
     // Define key: endpoint mappings
     const endpoints = {
-        'email-1': process.env.VITE_SEVER_SEND_GIFTCARD_URL,
-        'email-2': process.env.VITE_SEVER_SEND_RESULTS,
-        'email-3': process.env.VITE_SEVER_SEND_FUTURE_ENROLMENTS
+        'email-1': import.meta.env.VITE_SEVER_SEND_GIFTCARD_URL,
+        'email-2': import.meta.env.VITE_SEVER_SEND_RESULTS,
+        'email-3': import.meta.env.VITE_SEVER_SEND_FUTURE_ENROLMENTS
     };
 
     // Route to the endpoints if needed
     Object.entries(endpoints).forEach(([emailKey, endpoint]) => {
         if (data[emailKey] === 'Yes') {
-            postData(endpoint, data['email-input'])
+            const dataObj = {email: data['email-input']} // make valid JSON
+            postData(endpoint, dataObj)
         }
     });
 }
 
 function handleResponses(data){
-    const endpoint = process.env.VITE_SERVER_SUBMIT_RESPONSES;
-    postData(endpoint, data)
+    const endpoint = import.meta.env.VITE_SERVER_SUBMIT_RESPONSES;
+    // make sure the data is proper JSON format
+    const dataObj = {data:data}
+    postData(endpoint, dataObj)
 }
 
 function routeData(data) {

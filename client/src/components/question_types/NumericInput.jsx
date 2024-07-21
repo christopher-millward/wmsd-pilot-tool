@@ -30,7 +30,6 @@ function NumericInput(question) {
           value={inputValue}
           onChange={(e)=>numInputHandler(e)}
           placeholder='number'
-          onWheel={e=>e.preventDefault()}
         />
       </div>
     </div>

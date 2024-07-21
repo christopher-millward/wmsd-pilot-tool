@@ -1,9 +1,17 @@
 const { connection } = require('../middleware/connect_to_SS');
 
-const postResponse = async (req, res)=>{
+const postResponse = async (req, res)=>{    
 
+    // Connect to spreadsheet
     const { auth, ss, spreadsheetId } = await connection;
-    const email_address = 'test questionnaire response' //replace with request 
+
+    // Sort to ensure they're always in the same order
+    const sortedData = Object.keys(req.body.data)
+        .sort()
+        .reduce((acc, key) => ({ ...acc, [key]: req.body.data[key] }), {});
+
+    // return just the values, not the keys
+    const response_values = Object.values(sortedData)
 
     result = await ss.spreadsheets.values.append({
         auth,
@@ -12,7 +20,7 @@ const postResponse = async (req, res)=>{
         valueInputOption:"USER_ENTERED",
         resource: {
             values:[
-                [email_address]
+                response_values
             ]
         }
     })

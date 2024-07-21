@@ -4,7 +4,7 @@ const { connection } = require('../middleware/connect_to_SS');
 const sendGiftCard = async (req, res) => {
 
     const { auth, ss, spreadsheetId } = await connection;
-    const email_address = 'testing@testmal.com' //replace with request 
+    const email_address = req.body.email
 
     result = await ss.spreadsheets.values.append({
         auth,
@@ -25,7 +25,7 @@ const sendGiftCard = async (req, res) => {
 const notifyWithResults = async (req, res) => {
     
     const { auth, ss, spreadsheetId } = await connection;
-    const email_address = 'testing@testmal.com' //replace with request 
+    const email_address = req.body.email
 
     result = await ss.spreadsheets.values.append({
         auth,
@@ -43,7 +43,7 @@ const notifyWithResults = async (req, res) => {
 }
 
 const notifyOfFutureResearch = async (req, res) => {
-    const email_address = 'testing@testmal.com' //replace with request 
+    const email_address = req.body.email
 
     const { auth, ss, spreadsheetId } = await connection;
     result = await ss.spreadsheets.values.append({

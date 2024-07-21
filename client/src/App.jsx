@@ -38,9 +38,9 @@ function App() {
   //initialize responses storage
   const [allResponses, setAllResponses] = useState({});
 
-  console.log("Need to fix a couple things here: ")
-  console.log("- make sure data format is consistent in server")
-  console.log("- style for Safari ios")
+  // console.log("Need to fix a couple things here: ")
+  // console.log("- make sure data format is consistent in server")
+  // console.log("- style for Safari ios")
 
   return (
     <div className="App">
