@@ -43,7 +43,8 @@ function handleEmails(data) {
     // Route to the endpoints if needed
     Object.entries(endpoints).forEach(([emailKey, endpoint]) => {
         if (data[emailKey] === 'Yes') {
-            const dataObj = {email: data['email-input']} // make valid JSON
+            const dataObj = {"email": data['email-input']} // make valid JSON
+            console.log(dataObj)
             postData(endpoint, dataObj)
         }
     });
@@ -52,7 +53,7 @@ function handleEmails(data) {
 function handleResponses(data){
     const endpoint = import.meta.env.VITE_SERVER_SUBMIT_RESPONSES;
     // make sure the data is proper JSON format
-    const dataObj = {data:data}
+    const dataObj = {"data":data}
     postData(endpoint, dataObj)
 }
 

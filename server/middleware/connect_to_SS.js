@@ -7,7 +7,7 @@ const creds = {
     type: process.env.TYPE,
     project_id: process.env.PROJECT_ID,
     private_key_id: process.env.PRIVATE_KEY_ID,
-    private_key: process.env.PRIVATE_KEY,
+    private_key: process.env.PRIVATE_KEY.replace(/\\n/g, '\n'), // Replacing escaped newlines with actual newlines,
     client_email: process.env.CLIENT_EMAIL,
     client_id: process.env.CLIENT_ID,
     auth_uri: process.env.AUTH_URI,
@@ -21,11 +21,11 @@ const connection = (async () => {
     try {
         const auth = new google.auth.GoogleAuth({
             credentials: creds,
-            scopes: "https://www.googleapis.com/auth/spreadsheets",
+            scopes: ['https://www.googleapis.com/auth/spreadsheets'],
         });
 
         const client = await auth.getClient();
-        const ss = google.sheets({ version: "v4", auth: client });
+        const ss = google.sheets({ version: 'v4', auth: client });
 
         return { auth, ss, spreadsheetId };
     } catch (error) {

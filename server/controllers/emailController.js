@@ -5,7 +5,6 @@ const sendGiftCard = async (req, res) => {
 
     const { auth, ss, spreadsheetId } = await connection;
     const email_address = req.body.email
-
     result = await ss.spreadsheets.values.append({
         auth,
         spreadsheetId,
@@ -62,7 +61,7 @@ const notifyOfFutureResearch = async (req, res) => {
 }
 
 module.exports = {
-    sendGiftCard, 
+    sendGiftCard ,
     notifyWithResults,
     notifyOfFutureResearch
 }
