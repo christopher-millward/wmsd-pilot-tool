@@ -5,8 +5,16 @@ const cors = require('cors');
 const app = express();
 const port = process.env.PORT || 5000;
 
+// Configure CORS
+const corsOptions = {
+    origin: process.env.FRONTEND_ORIGIN,
+    methods: 'POST',
+    credentials: true,
+    optionsSuccessStatus: 204,
+};
+
 // Middleware
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(express.json());
 
 // Import Routes
