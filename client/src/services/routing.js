@@ -44,7 +44,6 @@ function handleEmails(data) {
     Object.entries(endpoints).forEach(([emailKey, endpoint]) => {
         if (data[emailKey] === 'Yes') {
             const dataObj = {"email": data['email-input']} // make valid JSON
-            console.log(dataObj)
             postData(endpoint, dataObj)
         }
     });
