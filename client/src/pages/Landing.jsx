@@ -33,6 +33,7 @@ export default function Landing() {
         <li>Good feelings from contributing to the improvement of the industry</li>
         </ul>
         <br></br>
+        <p><i>Note: Only the first 50 participants will be included and compensated.</i></p>
         <button id='enroll' onClick={()=>handleEnrollment()}>Enroll</button>
       </div>
 
