@@ -17,7 +17,7 @@ export default function Thankyou() {
             </p>
             <br></br>
             <p>
-                If you opted into the gift card, you can expect to recieve it via email by the end of the day (Christopher sends these out manually). Thank you for your patience.
+                If you opted into the gift card, you can expect to recieve it via email within the next couple days (Christopher sends these out manually). Thank you for your patience.
             </p>
             </div>
 

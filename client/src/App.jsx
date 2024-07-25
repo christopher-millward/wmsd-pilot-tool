@@ -8,12 +8,16 @@ import Landing from './pages/Landing';
 import Thankyou from './pages/Thankyou';
 import Consent from './pages/Consent';
 import Error from './pages/Error';
+import MailingList from './pages/MailingList';
 import './App.scss';
+
+// const finished = import.meta.env.VITE_DATA_COLLECTION_OVER;
+const finished = false;
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <LandingPageLayout><Landing/></LandingPageLayout>,
+    element: <LandingPageLayout>{finished ? <MailingList/>: <Landing/>}</LandingPageLayout>,
     errorElement: <DefaultPageLayout><Error/></DefaultPageLayout>,
   },
   {

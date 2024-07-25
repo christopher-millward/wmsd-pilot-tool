@@ -59,9 +59,11 @@ function handleResponses(data){
 function routeData(data) {
     // Seperate data
     const { emailOptions, responses } = separateFormData(data);
-    // Send to controllers
-    handleEmails(emailOptions)
-    handleResponses(responses)
+
+    console.log(emailOptions)
+    // Send to controllers if the arrays are not empty
+    emailOptions?.length && handleEmails(emailOptions);
+    responses?.length && handleResponses(responses);
 }
 
 export {routeData};
