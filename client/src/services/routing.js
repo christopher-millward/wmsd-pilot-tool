@@ -60,10 +60,13 @@ function routeData(data) {
     // Seperate data
     const { emailOptions, responses } = separateFormData(data);
 
-    console.log(emailOptions)
-    // Send to controllers if the arrays are not empty
-    emailOptions?.length && handleEmails(emailOptions);
-    responses?.length && handleResponses(responses);
+    // Send to controllers if not empty
+    if(Object.keys(emailOptions).length > 0){
+        handleEmails(emailOptions)
+    }
+    if(Object.keys(responses).length > 0){
+        handleResponses(responses)
+    }
 }
 
 export {routeData};
