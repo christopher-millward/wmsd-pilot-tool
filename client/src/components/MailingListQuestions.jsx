@@ -41,7 +41,7 @@ export default function MailingListQuestions() {
         <br></br>
         <br></br>
         This round of data collection has come to an end. If you wish to stay informed on the results of this project and/or future studies, 
-            we encourage you to leave your email below!
+            please leave your email below!
         </p>
         <br></br>
             {Object.keys(questions).map((question)=>{

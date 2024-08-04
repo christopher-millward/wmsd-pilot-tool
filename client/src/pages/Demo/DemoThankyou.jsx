@@ -1,8 +1,8 @@
 import React from 'react';
-import './Thankyou.scss';
+import '../Thankyou.scss';
 import { useNavigate } from 'react-router-dom';
 
-export default function Thankyou() {
+export default function DemoThankyou() {
     const navigate = useNavigate();
     return (
         <div id='thankyou-page'>
@@ -17,11 +17,11 @@ export default function Thankyou() {
             </p>
             <br></br>
             <p>
-                If you opted into the gift card, you can expect to recieve it via email within the next couple days (Christopher sends these out manually). Thank you for your patience.
+                If you opted into the gift card, you can expect to recieve it via email within the hour. Thank you for your patience.
             </p>
             </div>
 
-            <button id='thankyou-button' onClick={()=>navigate('/')}>Back to main</button>
+            <button id='thankyou-button' onClick={()=>navigate('/demo')}>Back to main</button>
 
             <p id='contact-info'>contact <a href='mailto:cmillwar@uwo.ca?subject=Bartender Research' className='mailto'>cmillwar@uwo.ca</a> if you have any questions</p>
         </div>

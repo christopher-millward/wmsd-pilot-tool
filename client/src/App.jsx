@@ -10,6 +10,10 @@ import Consent from './pages/Consent';
 import Error from './pages/Error';
 import MailingList from './pages/MailingList';
 import './App.scss';
+import Demo from './pages/Demo/Demo';
+import DemoConsent from './pages/Demo/DemoConsent';
+import DemoQuestionnaire from './pages/Demo/DemoQuestionnaire';
+import DemoThankyou from './pages/Demo/DemoThankyou';
 
 // const finished = import.meta.env.VITE_DATA_COLLECTION_OVER;
 const finished = true;
@@ -31,6 +35,22 @@ const router = createBrowserRouter([
   {
     path: "/thankyou",
     element: <DefaultPageLayout><Thankyou/></DefaultPageLayout>,
+  },
+  {
+    path: "/demo",
+    element: <DefaultPageLayout><Demo/></DefaultPageLayout>,
+  },
+  {
+    path: "/demo-consent",
+    element: <DefaultPageLayout><DemoConsent/></DefaultPageLayout>,
+  },
+  {
+    path: "/demo-questionnaire",
+    element: <DefaultPageLayout><DemoQuestionnaire/></DefaultPageLayout>,
+  },
+  {
+    path: "/demo-thankyou",
+    element: <DefaultPageLayout><DemoThankyou/></DefaultPageLayout>,
   },
 ]);
 
