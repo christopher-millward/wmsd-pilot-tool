@@ -12,7 +12,7 @@ import MailingList from './pages/MailingList';
 import './App.scss';
 
 // const finished = import.meta.env.VITE_DATA_COLLECTION_OVER;
-const finished = false;
+const finished = true;
 
 const router = createBrowserRouter([
   {
