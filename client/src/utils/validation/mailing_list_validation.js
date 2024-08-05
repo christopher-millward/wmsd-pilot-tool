@@ -12,14 +12,20 @@ function validateAllResponses(responses){
             invalid[id]='Question has not been answered'; // add to Obj
         }
     // If any of the email questions were "Yes"
-    if(emailIDs.some(id => document.querySelector(`#${id} input[type="radio"]:checked`).value === "Yes")){
-        // if email is blank
+    if (emailIDs.some(id => {
+        // Find the checked radio button for the current id
+        const checkedRadio = document.querySelector(`#${id} input[type="radio"]:checked`);
+        
+        // Check if a radio button is checked and its value is "Yes"
+        return checkedRadio && checkedRadio.value === "Yes";
+    })) {
+        // If email is blank or NaN, mark it as invalid
         const emailElement = document.getElementById('email-input');
         
-        if(emailElement.value ==='' || Number.isNaN(emailElement.value)){ //if email is blank
-            invalid['email-input']='email must be entered';
+        if (emailElement && (emailElement.value === '' || Number.isNaN(emailElement.value))) {
+            invalid['email-input'] = 'Email must be entered';
         }
-    } 
+    }
     });
     return invalid;
 }

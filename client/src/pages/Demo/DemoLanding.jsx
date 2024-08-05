@@ -3,7 +3,7 @@ import '../Landing.scss';
 import { useNavigate } from 'react-router-dom';
 
 
-export default function Demo() {
+export default function DemoLanding() {
   const navigate = useNavigate();
   
   function handleEnrollment(){

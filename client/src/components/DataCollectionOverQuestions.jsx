@@ -2,8 +2,9 @@ import React, { useContext } from 'react';
 import renderQuestionComponent from '../utils/question_mapper';
 import handleResponses from '../utils/hooks/handleResponses';
 import { ResponseContext } from '../App';
+import './EmailQuestions.scss';
 
-export default function MailingListQuestions() {
+export default function DataCollectionOverQuestions() {
     const context = useContext(ResponseContext);
 
     const questions = {
@@ -37,8 +38,10 @@ export default function MailingListQuestions() {
     <div id='email-intake-container'>
         
         <div className='question-card'>
-        <p className='mailing-list-text'>
-        To stay updated on this project and our future research in bartender/ restaurant ergonomics, 
+        <p className='mailing-list-text'>Thank you so much for your interest in this project!
+        <br></br>
+        <br></br>
+        This round of data collection has come to an end. If you wish to stay informed on the results of this project and/or future studies, 
             please leave your email below!
         </p>
         <br></br>
