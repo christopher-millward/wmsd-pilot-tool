@@ -11,6 +11,7 @@ import DemoConsent from '../pages/Demo/DemoConsent';
 import DemoQuestionnaire from '../pages/Demo/DemoQuestionnaire';
 import DemoThankyou from '../pages/Demo/DemoThankyou';
 import MailingList from '../pages/MailingList';
+import MailingThankyou from '../pages/MailingThankyou';
 
 // Handle when data collection is over
 const finished = true;
@@ -52,6 +53,10 @@ const routes = [
   {
     path: "/mailing-list",
     element: <DefaultPageLayout><MailingList/></DefaultPageLayout>,
+  },
+  {
+    path: "/mailing-thankyou",
+    element: <DefaultPageLayout><MailingThankyou/></DefaultPageLayout>,
   },
 ];
 

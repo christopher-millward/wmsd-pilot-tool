@@ -23,7 +23,7 @@ export default function MailingList() {
             localStorage.clear()
 
             // go to thankyou
-            navigate('/thankyou')
+            navigate('/mailing-thankyou')
         }
   }
 
